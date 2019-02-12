@@ -1,0 +1,174 @@
+@import 'https://fonts.googleapis.com/css?family=Ubuntu:300, 400, 500, 700';
+
+@font-face {
+  font-family: "flexo";
+  src: url("fonts/flexo/Flexo.eot");
+  src: url("fonts/flexo/Flexo.eot?#iefix") format("embedded-opentype"),
+    url("fonts/flexo/Flexo.otf") format("otf"),
+    url("fonts/flexo/Flexo.woff") format("woff"),
+    url("fonts/flexo/Flexo.ttf") format("truetype"),
+    url("fonts/flexo/Flexo.svg#Flexo") format("svg");
+}
+
+@font-face {
+  font-family: "futura";
+  src: url("fonts/futura/futura-book.ttf") format("truetype"),
+    url("fonts/futura/futura-light.ttf") format("truetype");
+}
+
+:root {
+  --principal: #80CCEA;
+}
+
+body {
+  font-family: 'flexo', sans-serif;
+}
+
+.header {
+  padding: 5px 20px;
+  box-shadow: 0px 2px 16px 0px var(--principal);
+  background-color: var(--principal) !important;
+  margin-bottom: 30px;
+}
+
+.nav-link, .logo {
+  color: white !important;
+}
+
+.nav-link:hover {
+  border-radius: 5px;
+  background-color: #8DD7F4;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.dropdown-item:hover {
+  box-shadow: 0px 2px 16px 0px var(--principal);
+  background-color: var(--principal) !important;
+  color: white !important;
+}
+
+.loading {
+  animation: loading 1s ease infinite;
+}
+
+@keyframes loading {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.upload-img {
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+  display: block;
+}
+
+.my-btn, .my-badge, .my-thead {
+  background-color: var(--principal) !important;
+  color: white !important;
+  border: none;
+  font-weight: bold;
+}
+
+.my-btn:hover, .my-badge:hover {
+  box-shadow: 0px 2px 16px 0px var(--principal);
+}
+
+footer.page-footer .footer-copyright {
+  overflow: hidden;
+  background-color: #263238 !important;
+  color: rgba(255, 255, 255, .6);
+}
+
+.my-badge {
+  max-width: 80px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bs-callout {
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #eee;
+  border-left-width: 5px;
+  border-radius: 3px;
+}
+
+.bs-callout h4 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.bs-callout p:last-child {
+  margin-bottom: 0;
+}
+
+.bs-callout code {
+  border-radius: 3px;
+}
+
+.bs-callout+.bs-callout {
+  margin-top: -5px;
+}
+
+.bs-callout-default {
+  border-left-color: #777;
+}
+
+.bs-callout-default h4 {
+  color: #777;
+}
+
+.bs-callout-primary {
+  border-left-color: #428bca;
+}
+
+.bs-callout-primary h4 {
+  color: #428bca;
+}
+
+.bs-callout-success {
+  border-left-color: #5cb85c;
+}
+
+.bs-callout-success h4 {
+  color: #5cb85c;
+}
+
+.bs-callout-danger {
+  border-left-color: #d9534f;
+}
+
+.bs-callout-danger h4 {
+  color: #d9534f;
+}
+
+.bs-callout-warning {
+  border-left-color: #f0ad4e;
+}
+
+.bs-callout-warning h4 {
+  color: #f0ad4e;
+}
+
+.bs-callout-info {
+  border-left-color: #5bc0de;
+}
+
+.bs-callout-info h4 {
+  color: #5bc0de;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+}
